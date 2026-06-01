@@ -47,3 +47,29 @@ def draw_box(frame, box, label: str, confidence: float, color: tuple):
     cv2.putText(frame, text, (x1, y1 - 5), font, font_scale, text_color, thickness)
     
     return frame
+
+# Mapping of emotions to fixed BGR colors for clear visual encoding
+EMOTION_COLORS = {
+    'colère': (0, 0, 255),      # Red
+    'mépris': (0, 165, 255),    # Orange
+    'dégoût': (0, 100, 80),     # Dark Green/Brown
+    'peur': (180, 0, 180),      # Purple
+    'joie': (0, 200, 0),        # Green
+    'neutre': (180, 180, 180),  # Light Gray
+    'tristesse': (255, 0, 0),   # Blue
+    'surprise': (0, 215, 255),  # Yellow/Gold
+    
+    'anger': (0, 0, 255),
+    'contempt': (0, 165, 255),
+    'disgust': (0, 100, 80),
+    'fear': (180, 0, 180),
+    'happiness': (0, 200, 0),
+    'neutral': (180, 180, 180),
+    'sadness': (255, 0, 0),
+    'surprise': (0, 215, 255)
+}
+
+def get_emotion_color(emotion: str) -> tuple:
+    """Return a fixed BGR color for the emotion, defaulting to cyan if unknown."""
+    return EMOTION_COLORS.get(emotion.lower(), (255, 255, 0))
+
