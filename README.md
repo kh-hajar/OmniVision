@@ -6,6 +6,10 @@
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.9-green.svg)
 ![HSEmotion](https://img.shields.io/badge/HSEmotion-FER-purple.svg)
 
+> 🎓 **Projet académique** réalisé dans le cadre d'un **projet de Traitement de l'Image** à l'**École Nationale des Sciences Appliquées de Tanger (ENSA Tanger)**.
+>
+> 👨‍🏫 **Encadrant :** Professeur **LACHKAR ABDELMOUNAIM**
+
 **OmniVision AI** is an advanced, universal AI Vision Platform built with cutting-edge Deep Learning techniques. It combines **real-time object detection** powered by **YOLOv8** and **facial emotion recognition** powered by **HSEmotion**, all wrapped in an elegant, highly interactive **Streamlit** dashboard.
 
 ---
@@ -135,3 +139,13 @@ timm==0.9.12         # EfficientNet / MobileNet backbone
 ---
 
 *Built with passion to push the boundaries of accessible computer vision.*
+
+---
+
+## 🏫 Informations Académiques
+
+| Champ | Détail |
+|---|---|
+| **Établissement** | École Nationale des Sciences Appliquées de Tanger (ENSA Tanger) |
+| **Cadre du projet** | Projet de Traitement de l'Image |
+| **Encadrant** | Professeur LACHKAR ABDELMOUNAIM |
